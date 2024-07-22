@@ -6,51 +6,60 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Tacco Shop</title>
 </head>
-<body>
+<body class="bg-cyan-400">
+
+
 
     <header>
-        <h1>Welcome to The Taco Shop</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About LTS</a></li>
-                <li><a href="#menu">Our Menu</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+        
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between ">
+            <div>
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    Taco
+                </span>
+            </div>
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto">
+                <li class="mx-4"><a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
+                <li class="mx-4"><a href="index.html#about" class="text-xl hover:text-cyan-500 duration-500">About LTS</a></li>
+                <li class="mx-4"><a href="hours.html" class="text-xl hover:text-cyan-500 duration-500">Store Hours</a></li>
+                <li class="mx-4"><a href="contact.html" class="text-xl hover:text-cyan-500 duration-500">Contact Us</a></li>
             </ul>
         </nav>
 
-        <figure>
-            <img src="img/tacos_tray_400x267.png" alt="">
-            <p>A Tray of Tasty Tacos</p>
+        <figure class="relative w-full h-64">
+            <div class="absolute max-h-100 inset-0 bg-cover bg-center blur-sm" style="background-image: url('img/tacos_tray_400x267.png');"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
+                <h1 class="font-bold text-2xl text-center">Little Taco Shop Ours</h1>
+                <p class="text-lg">A Tray of Tasty Tacos</p>
+            </div>
         </figure>
 
     </header>
-
     
 
     <hr>
-    <section id="about">
-    
-        <dt>
-            We are open 7 Hours a week
-            <br><br>
-            Sunday - Thursday
-            <dd>
-                11am - 9am
-            </dd>
-
-            Friday - Saturday
-            <dd>
-                11am - 11pm
-            </dd>
-        </dt>
+    <section class="flex flex-col items-center justify-center mt-5 mb-5 text-center">
+        <div>
+            <dt class="text-lg font-bold mb-4">
+                We are open 7 Hours a week
+            </dt>
+            <div class="mb-4">
+                <span class="block font-medium">Sunday - Thursday</span>
+                <dd class="ml-4">11am - 9pm</dd>
+            </div>
+            <div class="mb-4">
+                <span class="block font-medium">Friday - Saturday</span>
+                <dd class="ml-4">11am - 11pm</dd>
+            </div>
+        </div>
         <br>
-        <a href="#">Back to The Top</a>
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Back to Top</a>
     </section>
+    
     <hr>
     <br>
-    <footer>
-        Copyright &copy; The Little Shop 
+    <footer class="p-5 bg-white shadow flex flex-col items-center justify-center min-h-max text-black">
+        <p class="text-center">Copyright &copy; The Little Shop</p>
     </footer>
     
 </body>
