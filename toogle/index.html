@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #color-display {
+            background-color: #008080;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div id="color-display" style="width: 200px; height: 200px;">
+            <p id="color-text" ></p>
+        </div>
+        <br><br><input type="text" id="color-input" placeholder="Enter color code or name">
+        <br><br><button onclick="toogle()">Toogle text color</button>
+    </div>
+
+
+    <script>
+        document.getElementById('color-input').addEventListener('input', function() {
+            var colorValue = this.value;
+            document.getElementById('color-display').style.backgroundColor = colorValue;
+            document.getElementById('color-text').innerText = colorValue + '\n' + colorValue;
+        });
+
+        function toogle() {
+            var colorText = document.getElementById('color-text');
+            if(colorText.style.color == 'white'){
+                colorText.style.color = 'black';
+            }else{
+                colorText.style.color = 'white';
+            }
+        }
+
+    </script>
+</body>
+</html>
