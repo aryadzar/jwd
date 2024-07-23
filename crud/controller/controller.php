@@ -17,7 +17,10 @@ function select($query){
 
 function tambah_pegawai($post){
     global $conn;
-
+    
+    if (empty($post['nama_pegawai']) || empty($post['bidang_pegawai']) || empty($post['no_telepon'])) {
+        return 'Semua field harus diisi';
+    }
     $nama = $post['nama_pegawai'];
     $bidang = $post['bidang_pegawai'];
     $no_telpon = $post['no_telepon'];
