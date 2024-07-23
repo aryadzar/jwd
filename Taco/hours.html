@@ -1,66 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Tacco Shop</title>
-</head>
-<body class="bg-cyan-400">
-
-
-
+  </head>
+  <body class="bg-cyan-400">
     <header>
-        
-        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between ">
-            <div>
-                <span class="text-2xl font-[Poppins] cursor-pointer">
-                    Taco
-                </span>
-            </div>
-            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto">
-                <li class="mx-4"><a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
-                <li class="mx-4"><a href="index.html#about" class="text-xl hover:text-cyan-500 duration-500">About LTS</a></li>
-                <li class="mx-4"><a href="hours.html" class="text-xl hover:text-cyan-500 duration-500">Store Hours</a></li>
-                <li class="mx-4"><a href="contact.html" class="text-xl hover:text-cyan-500 duration-500">Contact Us</a></li>
-            </ul>
-        </nav>
-
-        <figure class="relative w-full h-64">
-            <div class="absolute max-h-100 inset-0 bg-cover bg-center blur-sm" style="background-image: url('img/tacos_tray_400x267.png');"></div>
-            <div class="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                <h1 class="font-bold text-2xl text-center">Little Taco Shop Ours</h1>
-                <p class="text-lg">A Tray of Tasty Tacos</p>
-            </div>
-        </figure>
-
-    </header>
-    
-
-    <hr>
-    <section class="flex flex-col items-center justify-center mt-5 mb-5 text-center">
+      <nav
+        class="bg-white p-5 shadow md:flex md:items-center md:justify-between"
+      >
         <div>
-            <dt class="text-lg font-bold mb-4">
-                We are open 7 Hours a week
-            </dt>
-            <div class="mb-4">
-                <span class="block font-medium">Sunday - Thursday</span>
-                <dd class="ml-4">11am - 9pm</dd>
-            </div>
-            <div class="mb-4">
-                <span class="block font-medium">Friday - Saturday</span>
-                <dd class="ml-4">11am - 11pm</dd>
-            </div>
+          <span class="cursor-pointer font-[Poppins] text-2xl"> Taco </span>
         </div>
-        <br>
-        <a href="#" class="text-xl hover:text-cyan-500 duration-500">Back to Top</a>
+        <ul
+          class="absolute left-0 z-[-1] w-full bg-white md:static md:z-auto md:flex md:w-auto md:items-center"
+        >
+          <li class="mx-4">
+            <a
+              href="index.html"
+              class="text-xl duration-500 hover:text-cyan-500"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4">
+            <a
+              href="index.html#about"
+              class="text-xl duration-500 hover:text-cyan-500"
+              >About LTS</a
+            >
+          </li>
+          <li class="mx-4">
+            <a
+              href="hours.html"
+              class="text-xl duration-500 hover:text-cyan-500"
+              >Store Hours</a
+            >
+          </li>
+          <li class="mx-4">
+            <a
+              href="contact.html"
+              class="text-xl duration-500 hover:text-cyan-500"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="relative h-64 w-full">
+        <div
+          class="max-h-100 absolute inset-0 bg-cover bg-center blur-sm"
+          style="background-image: url(&quot;img/tacos_tray_400x267.png&quot;)"
+        ></div>
+        <div
+          class="relative z-10 flex h-full flex-col items-center justify-center text-white"
+        >
+          <h1 class="text-center text-2xl font-bold">Little Taco Shop Ours</h1>
+          <p class="text-lg">A Tray of Tasty Tacos</p>
+        </div>
+      </figure>
+    </header>
+
+    <hr />
+    <section
+      class="mb-5 mt-5 flex flex-col items-center justify-center text-center"
+    >
+      <div>
+        <dt class="mb-4 text-lg font-bold">We are open 7 Hours a week</dt>
+        <div class="mb-4">
+          <span class="block font-medium">Sunday - Thursday</span>
+          <dd class="ml-4">11am - 9pm</dd>
+        </div>
+        <div class="mb-4">
+          <span class="block font-medium">Friday - Saturday</span>
+          <dd class="ml-4">11am - 11pm</dd>
+        </div>
+      </div>
+      <br />
+      <a href="#" class="text-xl duration-500 hover:text-cyan-500"
+        >Back to Top</a
+      >
     </section>
-    
-    <hr>
-    <br>
-    <footer class="p-5 bg-white shadow flex flex-col items-center justify-center min-h-max text-black">
-        <p class="text-center">Copyright &copy; The Little Shop</p>
+
+    <hr />
+    <br />
+    <footer
+      class="flex min-h-max flex-col items-center justify-center bg-white p-5 text-black shadow"
+    >
+      <p class="text-center">Copyright &copy; The Little Shop</p>
     </footer>
-    
-</body>
+  </body>
 </html>
