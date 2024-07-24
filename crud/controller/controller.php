@@ -15,17 +15,58 @@ function select($query){
       return $rows;
 }
 
-function tambah_pegawai($post){
+function tambah_pegawai($post, $files){
     global $conn;
     
     if (empty($post['nama_pegawai']) || empty($post['bidang_pegawai']) || empty($post['no_telepon'])) {
         return 'Semua field harus diisi';
     }
+
     $nama = $post['nama_pegawai'];
     $bidang = $post['bidang_pegawai'];
     $no_telpon = $post['no_telepon'];
 
-    mysqli_query($conn, "INSERT INTO pegawai (nama_pegawai, bidang_pegawai, no_telpon) VALUES('$nama', '$bidang', '$no_telpon')");
+    if($files["foto"]["error"] === 4){
+        echo"
+            <script>
+              alert('Gambar Teknisi Belum Di Upload');
+            </script>
+  
+          ";
+          return false;
+      }
+    $fileName = $files["foto"]["name"];
+    $fileSize = $files["foto"]["size"];
+    $tmpName =  $files["foto"]["tmp_name"];
+
+    $validImageExtension = ['jpg', 'jpeg', 'png'];
+    $imageExtension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+
+    if(!in_array($imageExtension, $validImageExtension)){
+      echo "
+        <script>
+        alert('Gambar harus jpg, jpeg, png');
+      </script>
+      ";
+
+      return false;
+    }
+
+    if($fileSize > 5000000){
+      echo "
+      <script>
+        alert('Gambar tidak boleh lebih dari 5MB');
+      </script>
+    ";
+
+    return false;
+    }
+
+    $newImageName = uniqid();
+    $newImageName .= ".".$imageExtension;
+
+    move_uploaded_file($tmpName, "./foto/".$newImageName );
+    mysqli_query($conn, "INSERT INTO pegawai (foto,nama_pegawai, bidang_pegawai, no_telpon) VALUES( '$newImageName', '$nama', '$bidang', '$no_telpon')");
 
 
     return mysqli_affected_rows($conn);
