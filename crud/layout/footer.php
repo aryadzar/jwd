@@ -1,8 +1,8 @@
 </div>
 
 
-<div class="footer">
-        <p>&copy; <span id="year"></span> Nama Kamu. All rights reserved.</p>
+<div class="footer container mx-auto flex justify-center text-center mt-5">
+        <p>&copy; <span id="year"></span> CRUD pegawai. All rights reserved.</p>
     </div>
 
     <script>

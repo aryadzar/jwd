@@ -22,12 +22,12 @@ if(isset($_POST["login"])){
             $_SESSION["akses"] = true;
             header("Location: index.php");
             exit;
-        }else{
+          }
+          
+    }else{
             $error_message = "Username atau password salah";
             $error = true;
         }
-    }
-    
 }
 
 ?>
@@ -79,7 +79,7 @@ if(isset($_POST["login"])){
           <label class="block text-gray-700 mb-2">Password</label>
           <input type="password" name="password" placeholder="Enter your password" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
-        <button name="login" class="w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Log In</button>
+        <button name="login" class="w-full py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Log In</button>
       </form>
       <p class="text-center text-gray-500 mt-6">Belum punya akun ? <a href="create.php" class="text-blue-500 hover:underline">Sign in</a></p>
     </div>

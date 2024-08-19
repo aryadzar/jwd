@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="shortcut icon" href="https://img.freepik.com/premium-vector/hotel-icon-logo-vector-design-template_827767-3569.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-blue-700">
+
+    <nav class="bg-gradient-to-r from-blue-500 to-blue-700 py-4 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="https://img.freepik.com/premium-vector/hotel-icon-logo-vector-design-template_827767-3569.jpg" class="w-16 h-16 mr-3 rounded-full shadow-md" alt="Hotel Logo">
+                <a href="index.html">
+                    <span class="text-white text-xl font-bold">Bintang Angkasa Perma</span>
+                </a>
+            </div>
+            <ul class="flex space-x-8 text-lg">
+                <li><a href="#produk" class="text-white hover:text-gray-200 transition duration-300">Produk</a></li>
+                <li><a href="#harga" class="text-white hover:text-gray-200 transition duration-300">Daftar Harga</a></li>
+                <li><a href="#tentang" class="text-white hover:text-gray-200 transition duration-300">Tentang Kami</a></li>
+                <li><a href="pesan.php" class="bg-yellow-500 text-white hover:bg-yellow-600 py-2 px-4 rounded-lg transition duration-300">Pesan Sekarang</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="produk" class="py-6 mt-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center">Produk Kami</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-4 rounded-lg shadow-md ">
+                    <img src="https://www.pantaimentari.com/upload/2021/09/Pencahayaan_kamar-2.jpg" alt="Kamar Standar" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Kamar Standar</h3>
+                    <p class="mt-2">Kamar standar dengan fasilitas lengkap dan nyaman.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-cBjE2ce-NQGLtdJ2gDA6QJtHu82PGplVw&s" alt="Kamar Standar" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Kamar Deluxe</h3>
+                    <p class="mt-2">Kamar deluxe dengan kamar yang luas dan juga menghadap ke pantai.</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <img src="https://i2.wp.com/www.emporiointerior.com/upload/blog/model-interior-rumah-sultan-super-mewah-di-jambi-review-desain-interior-kamar-tidur-utama-klasik-part-16-180323014657366237.jpg" alt="Kamar Standar" class="w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mt-4">Kamar Family</h3>
+                    <p class="mt-2">Kamar standar dengan fasilitas layanan mewah dan juga eksklusif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class=" py-8 bg-gray-300">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center">Daftar Harga</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b text-left">Tipe Kamar</th>
+                            <th class="py-2 px-4 border-b text-left">Harga per Malam</th>                        
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Kamar Standar</td>
+                            <td class="py-2 px-4 border-b">Rp 500.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Kamar Deluxe</td>
+                            <td class="py-2 px-4 border-b">Rp 750.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Kamar Family</td>
+                            <td class="py-2 px-4 border-b">Rp 1.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6 text-center">Tentang Kami</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p>Selamat datang di Hotel Bintang Angkasa Perma, Kami menyediakan kamar hotel dengan fasilitas terlengkap daerah ini</p>
+                <ul class="mt-4">
+                    <li><strong>Alamat:</strong> Jl. Merdeka No. 123, Jakarta</li>
+                    <li><strong>No. Telepon:</strong> (021) 123-4567</li>
+                    <li> <a href="mailto:info@bintangangkasaperma.com"> <strong>Email:</strong> info@bintangangkasaperma.com </a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
